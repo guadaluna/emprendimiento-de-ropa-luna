@@ -1,0 +1,29 @@
+@media screen and (max-width: 700px) {
+    .navbar{
+        position: relative;
+    }
+
+    .navbar .shop-bar{
+        display: block;
+        grid-column: 8/9;
+        font-size: 30px;
+        cursor: pointer;
+        }
+    
+        .navbar .despliegue{
+            display: block;
+        }
+    
+    .boton{
+        display: none;
+    }
+
+    .navbar .menu{
+        display: none;
+    }
+
+    p{
+        left: 30px;
+    }
+
+}

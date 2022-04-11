@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: 'satisfy' ;
+    src: url(../assets/fonts/Satisfy-Regular.ttf)
+}
+@font-face {
+    font-family: 'merienda';
+    src: url(../assets/fonts/Merienda-Regular.ttf);
+}
+@font-face {
+    font-family: 'mali';
+    src: url(../assets/fonts/Mali-Regular.ttf);
+}
+
+.bordesredondeados{
+    border: solid 3px violet;
+    border-radius: 30px;
+    margin: 20px;
+
+}
+
+p{
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 13px;
+
+}
+
+body{
+    background-image: url(../assets/background/clouds.gif);
+    background-size:contain;
+    background-color: antiquewhite;
+}
+
+h2{
+    font-family: 'merienda';
+    font-size: 30px;
+    text-align: center;
+    color: rgb(3, 41, 63);
+    margin-top: 100px;
+}
+
+h3{
+    font-family: 'mali';
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+}
+
+.metodos{
+    margin-left: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.pago{
+    position: relative;
+    margin-left: 30px;
+}
+
+#encabezados{
+    font-family: 'satisfy';
+    font-size: 70px;
+    text-align: center;
+    color: blueviolet;
+}
+
+
+
+.boton{
+    position: relative;
+    left: 1300px;
+    bottom: 650px;
+    padding: 12px 25px;
+    background-color: darksalmon;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'mali';
+}
+
+
+/*Contenedor padre*/
+
+.flex-container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Hijos del flex container*/
+
+
+.flex img{
+    width: 250px;
+}
+
+.flex{
+    margin: 25px;
+}
+
+.flex p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'mali';
+}
+
+.lorem{
+    font-family: 'mali';
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+}
+
+.Pregunta{
+    list-style-type: circle;
+    font-family: 'mali';
+    font-size: 25px;
+    text-align:justify;
+    margin: 40px;
+}
+
+/*Contenedor padre*/
+
+.CajaComunicate{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Hijos*/
+.Caja{
+    font-family: 'mali';
+    font-size: 15px;
+    text-align: justify;
+    margin: 30px;
+}
+
+.mensaje{
+    margin: 15px;
+}
+
+.telefono{
+    font-family: 'mali';
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 70px;
+    margin-top: 60px;
+}
+
+.email{
+    font-family: 'mali';
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 70px;
+}
+
+.mapa{
+    margin-left: 70px;
+}
+
+.horarios{
+    font-family: 'mali';
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 70px;
+    margin-top: 60px;
+}
+
+
+/*main*/
+.grid-container{
+    margin-top: 40px;
+    margin-bottom: 300px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 70px;
+}
+
+.navbar{
+    margin-top: 30px;
+    background-color: rgba(225, 149, 255, 0.856);
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    align-items: center;
+}
+
+.navbar .despliegue{
+    display: none;
+    justify-content: space-around;
+    grid-column: 2;
+}
+
+.navbar .menu{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 3/7;
+}
+
+.navbar .menu li{
+        list-style-type: none;
+        font-family: 'mali';
+        font-size: 20px;
+}
+
+.navbar .shop{
+    grid-column: 8/9;
+    cursor: pointer;
+}
+
+.piedepagina{
+    background-color: rgba(225, 149, 255, 0.856);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
