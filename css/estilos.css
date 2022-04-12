@@ -231,19 +231,4 @@ h3{
 
 /*animacion*/
 
-.enviosgratis{
-    animation-duration: 2s;
-    animation-name: fade;
-    animation-iteration-count: infinite;
-}
-
-@keyframes fade{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
 
