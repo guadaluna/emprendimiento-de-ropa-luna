@@ -45,6 +45,8 @@ h2{
     margin-top: 100px;
 }
 
+
+
 h3{
     font-family: 'mali';
     font-size: 20px;
@@ -68,6 +70,7 @@ h3{
     text-align: center;
     color: blueviolet;
 }
+
 
 
 
@@ -220,7 +223,11 @@ h3{
 }
 
 .piedepagina{
-    background-color: rgba(225, 149, 255, 0.856);
+    background-image: linear-gradient(135deg, rgba(225, 149, 255, 0.856) 10%, antiquewhite 100% );
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
+
+
+

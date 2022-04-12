@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <script src="https://kit.fontawesome.com/8815d8fb06.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    
+    <header>
+        <p class="enviosgratis"> Envios gratis a partir de $5000</p>
+        <h1 id="encabezados">Artemisa</h1>
+        <nav class="navbar">
+            <!--Listas Desordenadas-->
+            <ul class="menu">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="lookbook.html">Lookbook</a>
+                </li>
+                <li>
+                    <a href="PreguntasFrecuentes.html">Preguntas Frecuentes</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+            
+            <div class="shop">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="despliegue">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+    </header>
+    <h2>Contacto</h2>
+
+    <main>
+    <h3>Dejanos tu mensaje y nos pondremos en contacto</h3>
+    <div>
+    <form action="procesar.php" method="">
+
+        <div class="CajaComunicate">
+        <fieldset>
+            <div>
+                <p class="Caja Nombre">
+                    <label for="Nombre y apellido:"> Nombre y apellido: </label>
+                    <input type="text" name="Nombre y apellido">
+                </p>
+            </div>
+            <div>
+                <p class="Caja email">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="E-mail" required>
+                </p>
+            </div>
+        <!--Checkbox-->
+            <div class="Caja Newsletter">
+                <label for="Newsletter">¿Desea recibir nuestro Newsletter?</label>
+                <input type="checkbox" name="Newsletter" value="Si">
+            </div>
+        <!--Menu despegable-->
+            <div class="Caja Asunto">
+                <h4>Asunto</h4>
+                <select name="Asunto" id="">
+                <option value="Servicioalcliente">Servicio al cliente</option>
+                <option value="Negocios">Negocios</option>
+                <option value="Reclamos">Reclamos</option>
+                <option value="Otro">Otro</option>
+            </select>
+            </div>
+            <div class="caja mensaje">
+            <h4 class="mensaje">Mensaje:</h4>
+            <textarea name="Mensaje" id="" cols="60" rows="20"></textarea><br>
+            </div>
+
+        <!--botones-->
+            <div class="caja enviar">
+                <input type="reset" value="Borrar">
+                <input type="submit" value="Enviar">
+            </div>
+        </fieldset>
+        </div>
+
+                <p class="telefono">Telefono: 1234567890</p>
+                <p class="email">E-mail: abc123@gmail.com</p>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.535933269773!2d-58.39343373941231!3d-34.5899523932229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5629793bd53%3A0x5a2de08f80503d4f!2sAv.%20Gral.%20Las%20Heras%202038%2C%20C1425ASH%20CABA!5e0!3m2!1ses-419!2sar!4v1647333996048!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h4 class="horarios">Horarios de atención</h4>
+                <p class="horarios">Lunes a Viernes 9:00 a 19:00. Sábado 9:00 a 14.00.</p>
+
+    </form>
+    </main>
+    <footer>
+        <h4 class="metodos">Metodos de pago:</h4>
+        <img class="pago" src="../assets/logo/pngwing.com.png" alt="Metodo" width="70">
+        <p>Todos los derechos reservados 2022</p>
+    </footer>
+</body>
+</html>
