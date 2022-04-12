@@ -43,6 +43,26 @@ h2{
     text-align: center;
     color: rgb(3, 41, 63);
     margin-top: 100px;
+    animation-name: movimiento_titulo;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+
+@keyframes movimiento_titulo {
+    0%{
+        transform: translateX(0px);
+    }
+
+    50%{
+        transform: rotateX(100deg);
+    }
+
+    100%{
+        transform: rotateX(360deg);
+    }
 }
 
 
@@ -69,6 +89,12 @@ h3{
     font-size: 70px;
     text-align: center;
     color: blueviolet;
+    transition: all 3s;
+}
+
+#encabezados:hover{
+    transform: translate(-3px);
+    color: aquamarine;
 }
 
 
@@ -84,6 +110,13 @@ h3{
     text-decoration: none;
     font-size: 20px;
     font-family: 'mali';
+    transition: all 1s;
+}
+
+.boton:hover{
+    transform: translate(-3px);
+    color: salmon;
+    background-color: blueviolet;
 }
 
 
