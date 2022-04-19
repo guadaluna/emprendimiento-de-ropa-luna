@@ -12,18 +12,145 @@
     
         .navbar .despliegue{
             display: block;
+            grid-column: 2;
         }
     
-    .boton{
-        display: none;
-    }
 
     .navbar .menu{
         display: none;
     }
 
-    p{
-        left: 30px;
+    .animate__zoomIn{
+        grid-column: 1/9;
+        font-size: 30px;
     }
 
+    /*Principal*/
+
+
+    .Principal .boton{
+        grid-row: 7;
+        grid-column: 4/6;
+    }
+    .Principal .contenido{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1px;
+        grid-column: 2/9;
+        grid-row: 2/9;
+    }
+
+    .contenido img{
+        width: 150px;
+    }
+
+
+    .contenido img{
+        width: 250px;
+    }
+
+
+    /*productos*/
+    .productos .top{
+        grid-column: 1;
+        justify-content: center;
+    }
+
+    .top img{
+        width: 150px;
+    }
+
+    .productos .vestidos{
+        grid-column: 2;
+        justify-content: center;
+    }
+
+    .vestidos img{
+        width: 150px;
+    }
+
+    .productos{
+        display: grid;
+        margin-top: 40px;
+        grid-template-columns: repeat(3,200px);
+        grid-template-rows: 250px 60px 250px 60px;
+    
+    }
+
+    .productos .accesorios{
+        grid-column: 3;
+        justify-content: center;
+    }
+
+    .accesorios img{
+        width: 150px;
+    }
+
+    .productos .pantalones{
+        grid-column: 1;
+        justify-content: center;
+    }
+
+    .pantalones img{
+        width: 150px;
+    }
+
+    .productos .abrigos{
+        grid-column: 2;
+        justify-content: center;
+    }
+
+    .abrigos img{
+        width: 150px;
+    }
+    
+    .productos .polleras{
+        grid-column: 3;
+        justify-content: center;
+    }
+
+    .polleras img{
+        width: 150px;
+    }
+
+    .productos .botontop{
+        grid-column: 1;
+        justify-content: center;
+    }
+
+    .productos .botonvestidos{
+        grid-column: 2;
+        justify-content: center;
+    }
+
+    .productos .botonaccesorios{
+        grid-column: 3;
+        justify-content: center;
+    }
+
+    .productos .botonpantalones{
+        grid-column: 1;
+        justify-content: center;
+    }
+
+    .productos .botonabrigos{
+        grid-column: 2;
+        justify-content: center;
+    }
+    
+    .productos .botonpolleras{
+        grid-column: 3;
+        justify-content: center;
+    }
+
+    /*footer*/
+    .metodos{
+        font-size: 10px;
+    }
+
+    .piedepagina .derechos{
+        font-size: 10px;
+        grid-column: 3/5;
+    }
 }
