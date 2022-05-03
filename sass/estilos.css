@@ -1,0 +1,545 @@
+nav ul {
+  margin: 10px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 10px;
+}
+
+a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #8b5236;
+}
+
+a:active {
+  font-size: 25px;
+  color: lightcoral;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'satisfy';
+  src: url(../assets/fonts/Satisfy-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'merienda';
+  src: url(../assets/fonts/Merienda-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'mali';
+  src: url(../assets/fonts/Mali-Regular.ttf);
+}
+
+body {
+  background-image: url(../assets/background/clouds.gif);
+}
+
+.enviosytitulo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.enviosytitulo #encabezados {
+  font-family: 'satisfy';
+  font-size: 70px;
+  text-align: center;
+  color: blueviolet;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+#encabezados:hover {
+  -webkit-transform: translate(-3px);
+          transform: translate(-3px);
+  color: aquamarine;
+}
+
+.enviosytitulo .enviosgratis {
+  font-family: 'mali';
+  text-align: center;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.Principal {
+  height: 80hv;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: (1fr)[8];
+      grid-template-rows: repeat(8, 1fr);
+}
+
+.animate__zoomIn {
+  font-family: 'merienda';
+  font-size: 30px;
+  text-align: center;
+  color: #03293f;
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/7;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.Principal .contenido {
+  margin-top: 50px;
+  margin-bottom: 300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px;
+      grid-template-columns: 300px 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 70px;
+          column-gap: 70px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/7;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 7;
+  grid-row: 2/9;
+}
+
+.Principal .boton {
+  display: -ms-grid;
+  display: grid;
+  padding: 12px 25px;
+  background-color: darksalmon;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'mali';
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-column: 7/8;
+  grid-row: -6/-5;
+  margin: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.boton:hover {
+  -webkit-transform: translate(-3px);
+          transform: translate(-3px);
+  color: salmon;
+  background-color: blueviolet;
+}
+
+/*Contenedor Productos*/
+.productos {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 40px;
+  -ms-grid-columns: (260px)[8];
+      grid-template-columns: repeat(8, 260px);
+  -ms-grid-rows: 250px 60px 250px 60px;
+      grid-template-rows: 250px 60px 250px 60px;
+}
+
+.productos .top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.productos .vestidos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.productos .accesorios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.productos .pantalones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.productos .abrigos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.productos .polleras {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+/*botones productos*/
+.productos .botontop {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin: 5px;
+  padding: 5px 5px;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'mali';
+  cursor: pointer;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.productos .botonvestidos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin: 5px;
+  padding: 5px 5px;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'mali';
+  cursor: pointer;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.productos .botonaccesorios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin: 5px;
+  padding: 5px 5px;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'mali';
+  cursor: pointer;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.productos .botonpantalones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  margin: 5px;
+  padding: 5px 5px;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'mali';
+  cursor: pointer;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.productos .botonabrigos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  margin: 5px;
+  padding: 5px 5px;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'mali';
+  cursor: pointer;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.productos .botonpolleras {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 5;
+  grid-column: 5;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  margin: 5px;
+  padding: 5px 5px;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'mali';
+  cursor: pointer;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.lorem {
+  font-family: 'mali';
+  font-size: 20px;
+  text-align: center;
+  margin: 30px;
+}
+
+.Pregunta {
+  list-style-type: circle;
+  font-family: 'mali';
+  font-size: 25px;
+  text-align: justify;
+  margin: 40px;
+}
+
+/*Contenedor padre*/
+.CajaComunicate {
+  margin-top: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*Hijos*/
+.Caja {
+  font-family: 'mali';
+  font-size: 15px;
+  text-align: justify;
+  margin: 30px;
+}
+
+.mensaje {
+  margin: 15px;
+}
+
+.telefono {
+  font-family: 'mali';
+  font-size: 15px;
+  text-align: justify;
+  margin-left: 70px;
+  margin-top: 60px;
+}
+
+.email {
+  font-family: 'mali';
+  font-size: 15px;
+  text-align: justify;
+  margin-left: 70px;
+}
+
+.mapa {
+  margin-left: 70px;
+}
+
+.horarios {
+  font-family: 'mali';
+  font-size: 15px;
+  text-align: justify;
+  margin-left: 70px;
+  margin-top: 60px;
+}
+
+/*main*/
+.grid-container {
+  margin-top: 40px;
+  margin-bottom: 300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px;
+      grid-template-columns: 300px 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 70px;
+          column-gap: 70px;
+}
+
+/*Barra de navegacion*/
+.navbar {
+  margin-top: 30px;
+  background-color: #e195ff;
+  padding: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .despliegue {
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.navbar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/7;
+}
+
+.navbar .menu li {
+  list-style-type: none;
+  font-family: 'mali';
+  font-size: 20px;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+}
+
+.navbar .shop {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 1;
+  grid-column: 8/9;
+  cursor: pointer;
+}
+
+/*footer*/
+.piedepagina {
+  display: -ms-grid;
+  display: grid;
+  height: 100px;
+  background-image: linear-gradient(135deg, rgba(225, 149, 255, 0.856) 10%, antiquewhite 100%);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  font-family: 'mali';
+}
+
+.piedepagina .informacion {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.piedepagina .derechos {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  text-align: center;
+}
+
+.piedepagina .redes {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 6;
+  grid-column: 6;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=estilos.css.map */
