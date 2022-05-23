@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
+    <!--SEO-->
+    <meta name="description" content="Artemisa. Tienda de ropa en donde encontraras lo último en tendencias de moda">
+    <meta name="keywords" content="MODA, ROPA AESTHETIC, ROPA AESTHETIC MUJER, ROPA TUMBLR, ROPA A LA MODA, ROPA A LA MODA DE MUJER, ACCESORIOS, POLLERAS, VESTIDOS, ABRIGOS, PANTALONES, TOPS, ROPA INDIE KID, ROPA Y2K, ESTILO Y2K, Y2K">
     <!--Icons-->
     <script src="https://kit.fontawesome.com/8815d8fb06.js" crossorigin="anonymous"></script>
     <!--Boostrap-->
-    <link rel="stylesheet" href="/lib/bootstrap-5.1.3-dist/css/bootstrap-grid.min.css">
-    <title>Artemisa</title>
+    <title>Artemisa - Home</title>
     <!--Animate-->
     <link
     rel="stylesheet"
@@ -19,15 +21,17 @@
 <body>
 
     <header>
-        <div class="enviosytitulo">
-            <p class="enviosgratis"> Envios gratis a partir de $5000</p>
-            <h1 id="encabezados">
-                Artemisa
-            </h1>
-        </div>
-        <nav class="navbar">
+
+        <nav>
             <!--Listas Desordenadas-->
-            <ul class="menu">
+            <img src="assets/logo/logopng.png" alt="">            
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa-solid fa-bars" id="btn"></i>
+                <i class="fa-solid fa-xmark" id="cancel"></i>
+            </label>            
+            <ul>
+
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -44,60 +48,95 @@
                     <a href="./pages/contacto.html">Contacto</a>
                 </li>
             </ul>
-
-            <div class="despliegue">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
-            <div class="shop">
-                <i class="fa-solid fa-user"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
         </nav>
 
     </header>
 
-    <main class="Principal">
-            <h2 class="animate__zoomIn">Nueva colección invierno 2022</h2>
-                <div class="contenido">
-                        <div><img src="assets/coleccion2022/camperaBordes.png" alt="coleccioninvierno2022" width="260"></div>
-                        <div><img src="assets/coleccion2022/pantalon2022Bordes.png" alt="coleccioninvierno2022" width="260"></div>
-                        <div><img src="assets/coleccion2022/BLANCOBordes.png"alt="coleccioninvierno2022" width="260"></div>
-                        <div><img src="assets/coleccion2022/camperA2Bordes.png" alt="coleccioninvierno2022" width="260"></div>
+            <!--Fondo Fijo-->
+            <main class="enviosytitulo">
+                <h1 id="encabezados">
+                    Artemisa
+                </h1>
+                    <p class="intro1">Bienvenidos a Artemisa! La tienda de ropa en donde encontrarás lo último en tendencias al mejor precio!</p>
+            </main>
+            <!--Info-->
+            <div class="casilla">
+                <div class="envioscasilla">
+                    <img src="assets/logo/envios.png" alt="">
+                    <p class="intro2">Los envios duran de 7 a 10 días hábiles en ser despachados. Hacemos envios gratis a todo el pais a partir de $6000</p>
                 </div>
-                <button class="boton">Ver</button>
-    </main>
+                <div class="pagocasilla">
+                    <img src="assets/logo/signopeso.png" alt="">
+                    <p class="intro3">
+                        Recibimos todos los medios de pago!
+                    </p>
+                </div>
+                <div class="redescasilla">
+                    <img src="assets/logo/87390.png" alt="">
+                <p>
+                    Seguinos tambien en nuestras redes para enterarte de los nuevos ingresos!
+                </p>                    
+                </div>
 
-        <h2 class="animate__zoomIn">Destacados</h2>
-        <div class="contenidodestacado">
-                <div class="imagendestacado1"><img src="assets/productos/camperacorazon.png" alt="destacados" width="260"></div>
-                <div class="imagendestacado1"><img src="assets/productos/polleraroja.png" alt="destacados" width="260"></div>
-                <div class="imagendestacado2"><img src="assets/productos/topcorazon.png"alt="destacados" width="260"></div>
-                <div class="imagendestacado2"><img src="assets/productos/topnegro.png" alt="destacados"></div>
-                <div class="imagendestacado3"><img src="assets/productos/guantes.png" alt="destacados" width="260"></div>
-                <div class="imagendestacado3"><img src="assets/productos/pantaloncargo.png" alt=""></div>
-                <div class="imagendestacado4"><img src="assets/productos/vestidonegro.png" alt=""></div>
-                <div class="imagendestacado4"><img src="assets/productos/cinturon.png" alt=""></div>
-                
-                <div class="textodestacado1"><p class="info">Campera Cupido $8000</p></div>
-                <div class="textodestacado1"><p class="info">Top Heartbreak $1500</p></div>
-                <div class="textodestacado2"><p class="info">Top Misconceived $1300</p></div>
-                <div class="textodestacado2"><p class="info">Pollera Demon $3500</p></div>
-                <div class="textodestacado3"><p class="info">Guantes de red $600</p></div>
-                <div class="textodestacado3"><p class="info">Pantalon Cargo $4000</p></div>
-                <div class="textodestacado4"><p class="info">Vestido Crush $5600</p></div>
-                <div class="textodestacado4"><p class="info">Cinturon con cadena $1200</p></div>
+            </div>
 
 
 
+        
+    <h2 class="animate__zoomIn">Nueva colección invierno 2022</h2>
+
+<section class="sectionslider">
+    <div class="slider">
+        <div class="slide">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="st first">
+                <img src="assets/coleccion2022/BLANCO.jpg" alt="">
+            </div>
+            <div class="st">
+                <img src="assets/coleccion2022/campera.jpg" alt="">
+            </div>
+            <div class="st">
+                <img src="assets/coleccion2022/outfit.jpg" alt="">
+            </div>
+            <div class="st">
+                <img src="assets/coleccion2022/8d5a0da4a1f654a22279be8d9745c1eb.jpg" alt="">
+            </div>
+
+            <div class="nav-auto">
+                <div class="a-b1"></div>
+                <div class="a-b2"></div>
+                <div class="a-b3"></div>
+                <div class="a-b4"></div>
+            </div>
         </div>
+
+
+        <div class="nav-m">
+            <label for="radio1" class="m-btn"></label>
+            <label for="radio2" class="m-btn"></label>
+            <label for="radio3" class="m-btn"></label>
+            <label for="radio4" class="m-btn"></label>
+        </div>
+    </div>
+
+
+</section>
+
+
 
 
     <footer class="piedepagina">
         <div class="informacion">
             <h4 class="metodos">Metodos de pago:</h4>
             <img class="pago" src="assets/logo/pngwing.com.png" alt="MetodoDePago" width="70">
+            <img src="assets/logo/mercadopago.png" alt="mercadopago" width="30">
+            <img src="assets/logo/transferencialogo.png" alt="transferencia" width="20">
         </div>
+
         <p class="derechos">Todos los derechos reservados 2022</p>
         <div class="redes">
             <i class="fa-brands fa-instagram"></i>
@@ -107,6 +146,17 @@
     </footer>
 
 
-    <script src="/lib/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked=true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        },5000);
+        </script>
+    
+
 </body>
 </html>

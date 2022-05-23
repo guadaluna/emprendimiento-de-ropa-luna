@@ -1,3 +1,20 @@
+@font-face{
+  font-family: 'satisfy' ;
+  src: url(../assets/fonts/Satisfy-Regular.ttf)
+}
+@font-face {
+  font-family: 'merienda';
+  src: url(../assets/fonts/Merienda-Regular.ttf);
+}
+@font-face {
+  font-family: 'mali';
+  src: url(../assets/fonts/Mali-Regular.ttf);
+}
+@font-face {
+  font-family: 'king';
+  src: url(../assets/fonts/KIN668.TTF);
+}
+
 nav ul {
   margin: 10px;
   padding: 0px;

@@ -1,53 +1,11 @@
-@media screen and (max-width: 700px) {
-    .navbar{
-        position: relative;
-    }
-
-    .navbar .shop-bar{
-        display: block;
-        grid-column: 8/9;
-        font-size: 30px;
-        cursor: pointer;
-        }
-    
-        .navbar .despliegue{
-            display: block;
-            grid-column: 2;
-        }
-    
-
-    .navbar .menu{
-        display: none;
-    }
-
+@media (min-width:360px) and (max-width: 914px) {
     .animate__zoomIn{
         grid-column: 1/9;
         font-size: 30px;
     }
 
-    /*Principal*/
-
-
-    .Principal .boton{
-        grid-row: 7;
-        grid-column: 4/6;
-    }
-    .Principal .contenido{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        column-gap: 1px;
-        grid-column: 2/9;
-        grid-row: 2/9;
-    }
-
-    .contenido img{
-        width: 150px;
-    }
-
-
-    .contenido img{
-        width: 250px;
+    .envioscasilla{
+        font-size: 15px;
     }
 
 
@@ -156,13 +114,241 @@
 
 
 
-/*Destacado*/
+
+/*Lookbook*/
+
+.lookbook{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    margin-left: 0%;
+    column-gap: 15px;
+}
+
+
+/*Contacto*/
+
+.Dudas{
+    margin-left: 70px;
+    margin-right: 50px;
+
+    margin-top: 50px;
+}
+
+
+/*Slider*/
+
+.sectionslider{
+    margin: 0;
+    padding: 0;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide{
+    height: 300px;
+    display: flex;
+}
+
+.st{
+    width: 20%;
+    transition: 2s;
+}
+.st img{
+    width: 300px;
+    height: 300px;
+}
+
+.nav-m{
+    position: absolute;
+    width: 300px;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.m-btn:not(:last-child){
+    margin-right: 20px;
+}
+
+
+
+.nav-auto{
+    position: absolute;
+    width: 300px;
+    margin-top: 320px;
+    justify-content: center;
+    display: flex;
+}
+
+
+.nav-auto div:not(:last-child){
+    margin-right: 20px;
+    justify-content: center;
+}
+
+/*footer*/
+
+.piedepagina{
+    display: grid;
+    height: 180px;
+    background-image: linear-gradient(135deg, rgba(225, 149, 255, 0.856) 10%, antiquewhite 100% );
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    font-family: 'mali';
+}
+
+.piedepagina .informacion{
+    margin-top: 15px;
+    margin-left: 20px;
+
+}
+
+.piedepagina .derechos{
+    grid-row: 2/5;
+    grid-column: 2/5;
+    text-align: center;
+    justify-content: center;
+}
+
+.informacion img{
+    width: 30%;
+}
+
+
+
+.piedepagina .redes{
+    grid-row: 2;
+    grid-column: 6;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.encontacto{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'satisfy';
+    margin-top: 70px;
+}
+
+/*info contacto*/
+.encontacto{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'satisfy';
+    margin-top: 70px;
+}
+
+
+    .contactanos{
+        font-size: 20px;
+        margin-left: 30px;
+        margin-top: 80px;
+        text-decoration: underline;
+    }
+    
+    .telefono{
+        font-family: 'mali';
+        font-size: 15px;
+        margin-left: 45px;
+    }
+    
+    
+    .horarios{
+        font-size: 20px;
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+    
+    .dias{
+        font-size: 15px;
+        margin-left: 45px;
+        margin-right: 50px;
+    }
+
+/*Preguntas frecuentes*/
+
+    .lorem{
+        font-size: 15px;
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 80px;
+        margin-bottom: 50px;
+        padding-right: 100px;
+    }
+    
+    .Dudas{
+        list-style-type: circle;
+        font-family: 'mali';
+        font-size: 20px;
+        text-align:justify;
+        margin-left: 55px;
+    }
+
+
+
+}
+
+@media (min-width:360px) and (max-width: 500px) {
+
+    .lookbook{
+        display: grid;
+        grid-template-columns: auto auto  ;
+        width: 80%;
+        margin-left: 15px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    
+    .lookbookimg{
+        border-radius: 20px;
+    }
+    .lookbook img{
+        width: 130px;
+    }
+
+    /*productos*/
+
+    .productos{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto 100px auto 100px;
+        width: 80%;
+        margin-left: 20px;
+        margin-bottom: 100px;
+        text-align: center;
+        padding: 20px;
+        }
+
+    .productos img{
+        width: 90px;
+    }
+
+
+    /*Destacado*/
 
     .contenidodestacado{
         grid-template-columns: auto auto;
         grid-template-rows: auto 70px auto 70px auto 70px auto 70px;
-        margin-left: 0%;
+        margin-left: 10px;
+        margin-right: 0px;
         column-gap: 25px;
+        margin-bottom: 0px;
+    }
+
+    .contenidodestacado img{
+        width: 150px;
     }
 
     .contenidodestacado .imagendestacado1{
@@ -197,24 +383,147 @@
         grid-row: 8;
     }
 
-/*Lookbook*/
-
-.lookbook{
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto;
-    margin-left: 0%;
-    column-gap: 15px;
 }
 
 
-/*Contacto*/
+@media (min-width:500px) and (max-width: 800px) {
 
-.Dudas{
-    margin-left: 70px;
-    margin-right: 50px;
+    .lookbook{
+        display: grid;
+        grid-template-columns: auto auto  ;
+        width: 80%;
+        margin-left: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    
+    .lookbookimg{
+        border-radius: 20px;
+    }
+    .lookbook img{
+        width: 180px;
+    }
 
-    margin-top: 50px;
+
+    /*Destacado*/
+
+    .contenidodestacado{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto 70px auto 70px auto 70px auto 70px;
+        margin-left: 50px;
+        margin-right: 0px;
+        column-gap: 25px;
+        margin-bottom: 0px;
+    }
+
+    .contenidodestacado img{
+        width: 150px;
+    }
+
+    .contenidodestacado .imagendestacado1{
+        grid-row: 1;
+    }
+
+    .contenidodestacado .textodestacado1{
+        grid-row: 2;
+    }
+
+    .contenidodestacado .imagendestacado2{
+        grid-row: 3;
+    }
+
+    .contenidodestacado .textodestacado2{
+        grid-row: 4;
+    }
+
+    .contenidodestacado .imagendestacado3{
+        grid-row: 5;
+    }
+
+    .contenidodestacado .textodestacado3{
+        grid-row: 6;
+    }
+
+    .contenidodestacado .imagendestacado4{
+        grid-row: 7;
+    }
+
+    .contenidodestacado .textodestacado4{
+        grid-row: 8;
+    }
+
+}
+
+@media (min-width:800px) and (max-width: 1300px) {
+
+    .lookbook{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto;
+        width: 80%;
+        margin-left: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    
+    .lookbookimg{
+        border-radius: 20px;
+    }
+    .lookbook img{
+        width: 200px;
+    }
+
+
+    /*Destacado*/
+
+    .contenidodestacado{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto 100px auto 100px;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 100px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contenidodestacado img{
+            width: 150px;
+        }
+        
+        .contenidodestacado .imagendestacado1{
+            grid-row: 1;
+        }
+        .contenidodestacado .imagendestacado2{
+            grid-row: 1;
+        }
+        
+        
+        .contenidodestacado .textodestacado1{
+            padding-top: 30px;
+            text-align: center;
+            grid-row: 2;
+        }
+        
+        .contenidodestacado .textodestacado2{
+            padding-top: 30px;
+            text-align: center;
+            grid-row: 2;
+        }
+        
+        .contenidodestacado .imagendestacado3{
+            grid-row: 3;
+        }
+        .contenidodestacado .imagendestacado4{
+            grid-row: 3;
+        }
+
 }
 
 
-}
+
+
+
+

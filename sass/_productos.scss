@@ -1,0 +1,94 @@
+//Import
+@import "fuentes";
+
+//Variables
+
+.animate__zoomIn{
+    font-family: 'merienda';
+    font-size: 30px;
+    text-align: center;
+    color: rgb(3, 41, 63);
+    margin-top: 100px;
+    display: grid;
+    grid-row: 1;
+    grid-column: 3/7;
+    animation-duration: 3s;
+}
+
+
+.contenidodestacado{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto 100px auto 100px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    text-align: center;
+    padding: 20px;
+
+    .imagendestacado1{
+    grid-row: 1;
+}
+
+    .imagendestacado2{
+    grid-row: 1;
+}
+
+    .imagendestacado3{
+        grid-row: 3;
+}
+
+    .imagendestacado4{
+        grid-row: 3;
+}
+
+    .textodestacado1{
+    padding-top: 30px;
+    text-align: center;
+    grid-row: 2;
+}
+
+    .textodestacado2{
+    padding-top: 30px;
+    text-align: center;
+    grid-row: 2;
+}
+
+    .textodestacado3{
+    padding-top: 30px;
+    text-align: center;
+    grid-row: 4;
+}
+
+    .textodestacado4{
+        padding-top: 30px;
+        text-align: center;
+        grid-row: 4;
+    }
+
+.textodestacado1{
+    font-family: $fuente-mali;
+    text-align: center;
+    font-size: 15px;
+}
+
+.textodestacado2{
+    font-family: $fuente-mali;
+    text-align: center;
+    font-size: 15px;
+}
+
+.textodestacado3{
+    font-family: $fuente-mali;
+    text-align: center;
+    font-size: 15px;
+}
+
+.textodestacado4{
+    font-family: $fuente-mali;
+    text-align: center;
+    font-size: 15px;
+}
+
+}
+

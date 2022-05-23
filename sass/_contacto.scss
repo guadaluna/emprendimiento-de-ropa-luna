@@ -1,0 +1,84 @@
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba($color: #d58fdf5b, $alpha: 1.0);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+
+
+}
+input, textarea{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 7px;
+            box-sizing: border-box;
+            font-size: 17px;
+            border: none;
+        }
+
+        textarea{
+            min-height: 100px;
+            max-height: 200px;
+            max-width: 100%;
+        }
+
+#boton{
+    background: rgb(203, 189, 241);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+#boton:hover{
+    cursor:pointer;
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+
+.encontacto{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'satisfy';
+    margin-top: 70px;
+}
+
+
+    .contactanos{
+        font-family: 'mali';
+        font-size: 25px;
+        text-align: justify;
+        margin-left: 70px;
+        margin-top: 80px;
+        text-decoration: underline;
+    }
+    
+    .telefono{
+        font-family: 'mali';
+        font-size: 16px;
+        text-align: justify;
+        margin-left: 90px;
+    }
+    
+    
+    .horarios{
+        font-family: 'mali';
+        font-size: 25px;
+        text-align: justify;
+        margin-left: 70px;
+        margin-top: 40px;
+        text-decoration: underline;
+    }
+    
+    .dias{
+        font-family: 'mali';
+        font-size: 16px;
+        text-align: justify;
+        margin-left: 90px;
+        margin-bottom: 100px;
+    }

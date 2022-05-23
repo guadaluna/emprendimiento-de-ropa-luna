@@ -1,0 +1,118 @@
+//Import
+@import "colores";
+@import "fuentes";
+@import "slider";
+@import "footer";
+@import "productos";
+@import "navbar";
+@import "lookbook";
+@import "preguntasfrecuentes";
+@import "contacto";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+//Variables
+
+
+
+//Index
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../assets/background/clouds.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+
+.enviosytitulo #encabezados{
+    margin-top: 50px;
+    font-family: 'satisfy';
+    font-size: 70px;
+    text-align: center;
+    color: blueviolet;
+    transition: all 3s;
+    cursor: default;
+
+    &:hover{
+        transform: translate(-3px);
+    color: aquamarine;
+    }
+
+}
+
+    .intro1{
+        font-family: 'mali';
+        font-size: 25px;
+        text-align: center;
+    }
+
+
+
+.casilla{
+    font-family: 'mali';
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    height: 200px;
+    background-color: rgb(255, 182, 227);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+    .envioscasilla{
+
+        width: 200px;
+        height: 200px;
+        &:hover{
+            background-color: $color-navbarletra;
+        }
+    }
+
+    .pagocasilla{
+        width: 200px;
+        height: 200px;
+        &:hover{
+            background-color: $color-navbarletra;
+        }
+    }
+
+    .redescasilla{
+        width: 200px;
+        height: 200px;
+        &:hover{
+            background-color: $color-navbarletra;
+        }
+}
+
+    .envioscasilla img{
+        padding-top: 20px;
+        width: 30px;
+    }
+
+    .pagocasilla img{
+        padding-top: 20px;
+        width: 30px;
+}
+
+    .redescasilla img{
+        padding-top: 20px;
+        width: 30px;
+    }
+
+}
+
